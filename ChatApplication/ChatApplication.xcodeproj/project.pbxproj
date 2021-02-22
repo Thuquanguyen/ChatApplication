@@ -16,8 +16,6 @@
 		185A798D2538965C00AF2440 /* ViewLoadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A79892538965C00AF2440 /* ViewLoadVC.xib */; };
 		185A7A352538C3C500AF2440 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A7A342538C3C500AF2440 /* AppUtils.swift */; };
 		185CA176251E539F00D6939F /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CA175251E539F00D6939F /* WKWebView+Extension.swift */; };
-		185D9FDA25D7767200D933E8 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D9FD825D7767200D933E8 /* SettingVC.swift */; };
-		185D9FDB25D7767200D933E8 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185D9FD925D7767200D933E8 /* SettingVC.xib */; };
 		185DE833253741C50080A16D /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185DE824253741C50080A16D /* HomeVC.xib */; };
 		185DE845253741C60080A16D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE82C253741C50080A16D /* HomeVC.swift */; };
 		185DE892253746000080A16D /* SignInWithAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DE890253746000080A16D /* SignInWithAccountVC.swift */; };
@@ -546,8 +544,6 @@
 		185A79892538965C00AF2440 /* ViewLoadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewLoadVC.xib; sourceTree = "<group>"; };
 		185A7A342538C3C500AF2440 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		185CA175251E539F00D6939F /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
-		185D9FD825D7767200D933E8 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingVC.swift; path = ../../../../../../Desktop/ChatApplication/ChatApplication/Controllers/WelcomeAndAccount/ChatVC/SettingVC.swift; sourceTree = "<group>"; };
-		185D9FD925D7767200D933E8 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingVC.xib; path = ../../../../../../Desktop/ChatApplication/ChatApplication/Controllers/WelcomeAndAccount/ChatVC/SettingVC.xib; sourceTree = "<group>"; };
 		185DE824253741C50080A16D /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		185DE82C253741C50080A16D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		185DE890253746000080A16D /* SignInWithAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAccountVC.swift; sourceTree = "<group>"; };
@@ -1115,8 +1111,6 @@
 		185D9FD725D7766000D933E8 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
-				185D9FD825D7767200D933E8 /* SettingVC.swift */,
-				185D9FD925D7767200D933E8 /* SettingVC.xib */,
 			);
 			path = SettingVC;
 			sourceTree = "<group>";
@@ -3105,7 +3099,6 @@
 				D1A93E5A22A51B9A00554C3E /* DefaultFilterShowResultButtonView.xib in Resources */,
 				A5C5C666228031A50090F3A0 /* LaunchScreen.storyboard in Resources */,
 				A51830AC2283C81600E2E35B /* TextPicker.xib in Resources */,
-				185D9FDB25D7767200D933E8 /* SettingVC.xib in Resources */,
 				185DE833253741C50080A16D /* HomeVC.xib in Resources */,
 				D1BD6C9022AE33DC00F0E064 /* NewsNavigationView.xib in Resources */,
 				A5C5C6BB228033070090F3A0 /* Lato-SemiboldItalic.ttf in Resources */,
@@ -3527,7 +3520,6 @@
 				D101459D22954CD100ED417C /* DefaultTableHeaderView.swift in Sources */,
 				D1A93E4A22A4F6EB00554C3E /* DefaultFilterHeaderView.swift in Sources */,
 				A51830DF2283DA7400E2E35B /* ESOptionSelectPresenter.swift in Sources */,
-				185D9FDA25D7767200D933E8 /* SettingVC.swift in Sources */,
 				CA2E6369247D2A9300A20D9F /* BubbleTabBarController.swift in Sources */,
 				A5C5C7CC228033920090F3A0 /* GradientButton.swift in Sources */,
 				CA2E6385247D2AD000A20D9F /* UIStackView+Extension.swift in Sources */,

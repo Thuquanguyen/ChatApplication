@@ -36,7 +36,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zEu-QN-vjZ">
                     <rect key="frame" x="15" y="338" width="384" height="120.5"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7f-Ik-XD6">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="adminkuchat@gmail.com" borderStyle="roundedRect" placeholder="Nhập Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7f-Ik-XD6">
                             <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="dAr-eF-3HE"/>
@@ -53,7 +53,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK6-IA-4Tp">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK6-IA-4Tp">
                             <rect key="frame" x="0.0" y="70.5" width="384" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="kLE-F8-OhM"/>

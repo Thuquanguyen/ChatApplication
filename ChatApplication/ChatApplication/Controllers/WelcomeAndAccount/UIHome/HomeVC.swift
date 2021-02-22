@@ -52,8 +52,8 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func actionSetting(_ sender: Any) {
-        let vc = SettingVC()
-        self.push(vc)
+//        let vc = SettingVC()
+//        self.push(vc)
     }
 }
 

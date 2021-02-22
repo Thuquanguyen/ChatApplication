@@ -39,11 +39,11 @@ class RoomCell: UITableViewCell {
     func setBubbleDataForMessage(message: MessageModel){
         if(message.messageText != nil) {
             self.textView.text = message.messageText
-            self.imageView?.isHidden = true
-            self.textView.isHidden = false
+            self.imageContent?.isHidden = true
+            textView.superview?.isHidden = false
         } else if(message.imageLink != nil){
-            self.imageView?.isHidden = false
-            self.textView.isHidden = true
+            self.imageContent?.isHidden = false
+            self.textView.superview?.isHidden = true
 //            self.imageContent.sd_setImage(with: URL(string: message.imageLink ?? ""), placeholderImage: UIImage(named: "icon_none"))
             self.imageContent.sd_setImage(with: URL(string: message.imageLink ?? ""), completed: nil)
         }
