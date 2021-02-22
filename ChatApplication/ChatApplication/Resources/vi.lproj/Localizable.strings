@@ -1,0 +1,124 @@
+/*
+  Localizable.strings
+  CTT_BN
+
+  Created by VietHD-D3 on 4/22/19.
+  Copyright © 2019 VietHD-D3. All rights reserved.
+*/
+
+"keychain.user.user_name" = "ESUsername";
+"keychain.user.pass_word" = "ESUserPassword";
+"keychain.user.id" = "ESUserID";
+"keychain.user.name" = "ESUserName";
+
+"userdefault.is_enable_biometric" = "IsBiometricEnable";
+
+"login_screen.username_placeholder" = "Nhập tên tài khoản";
+"login_screen.password_placeholder" = "Nhập mật khẩu";
+"login_screen.username_empty" = "Tên tài khoản không thể trống";
+"login_screen.password_empty" = "Mật khẩu không thể trống";
+
+"login_screen.finger_title_description" = "Mở khóa bằng vân tay";
+"login_screen.finger_quest_content" = "Đăng nhập bằng vân tay";
+"login_screen.finger_use_content" = "Sử dụng vân tay để đăng nhập vào ứng dụng nhanh chóng và tiện lợi";
+"login_screen.finger_content_error" = "Vân tay không đúng";
+
+"login_screen.faceid_title_description" = "Mở khóa bằng Face ID";
+"login_screen.faceid_quest_content" = "Đăng nhập bằng Face ID";
+"login_screen.faceid_use_content" = "Sử dụng FaceID để đăng nhập vào ứng dụng nhanh chóng và tiện lợi";
+"login_screen.faceid_content_error" = "FaceID không đúng";
+
+"login_screen.login_false" = "Đăng nhập thất bại, kiểm tra lại tài khoản hoặc mật khẩu";
+
+
+"home_menu.menu_item_travel" = "Khách du lịch";
+"home_menu.menu_item_invest" = "Nhà đầu tư";
+"home_menu.menu_item_enterprise" = "Doanh nghiệp";
+"home_menu.menu_item_people" = "Người dân";
+"home_menu.menu_item_weak_people" = "Người yếu thế";
+"Home_SearchBar" = "Tra cứu bất cứ gì...";
+"Home_language_name" = "VI";
+
+"tabbar.home_item" = "Trang chủ";
+"tabbar.account_item" = "Tài khoản";
+"tabbar.title_navi" = "Thông báo";
+"tabbar.ultilites" = "Tiện ích";
+
+
+"loading.default_title" = "Loading";
+
+"alert.default_title" = "Thông báo";
+"alert.default_login_error" = "Đăng nhập không thành công, vui lòng thử lại!";
+"alert.default_login" = "Bạn cần đăng nhập trước khi sử dụng tính năng này";
+"alert.default_login_title" = "Đăng nhập";
+"alert.default_login_updateSuccess" = "Cập nhật thành công";
+"alert.default_login_close" = "Đóng";
+"alert.default_name_not_type" = "Vui lòng nhập họ tên đầy đủ!";
+"alert.default_birthday_not_type" = "Vui lòng nhập ngày tháng năm sinh!";
+"alert.default_accept_title" = "OK";
+"alert.photo_permission_denied_title" = "Ứng dụng chưa được cấp quyền truy cập";
+"alert.photo_permission_denied_content" = "Tới cài đặt để cấp quyền cho ứng dụng?";
+"alert.edit_title" = "Chỉnh sửa";
+"alert.remove_title" = "Xoá";
+"alert.cancel_title" = "Huỷ";
+"alert_delete_are_you_sure" = "Bạn có chắc muốn xoá đánh giá này?";
+"alert_delete_comment_are_you_sure" = "Bạn có chắc muốn xoá bình luận này?";
+"alert.open_setting" = "Cài đặt";
+"alert.error_default" = " Có lỗi xảy ra, vui lòng thử lại ";
+"alert.error_wrong_date_format" = "Vui lòng nhập ngày tháng theo định dạng YYYY-MM-DD (Ví dụ: 2019-06-25)";
+"alert.email_invalid" = "Email không hợp lệ";
+"alert_no_connection" = "Lỗi kết nối";
+"alert_no_connection_try" = "Không có kết nối Internet, vui lòng kiểm tra lại.";
+"alert.text_search_limited" = "Không được nhập quá %d kí tự";
+"alert.content_not_found" = "Xin lỗi, nội dung không tồn tại hoặc đã bị xoá";
+"alert.not_found" = "Xin lỗi, nội dung hiện tại không khả dụng";
+"alert.image_wrong_format" = "Định dạng ảnh không hợp lệ";
+"alert.error_invalid_token" = "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại";
+"alert.force_update_button" = "Cập nhật";
+"alert.force_update_title" = "Cập nhật ứng dụng";
+"alert.force_update_description" = "Đã có phiên bản mới. Vui lòng cập nhật ngay để có những trải nghiệm tốt nhất";
+"alert.request_timeout" = "Quá thời gian kết nối tới máy chủ, vui lòng thử lại";
+
+"profile.logout_title" = "Đăng xuất";
+"profile.logout_content" = "Bạn có muốn kết thúc phiên đăng nhập này không?";
+"profile.screen_ok" = "Đồng ý";
+"profile.change_password" = "Đổi mật khẩu";
+"profile.notification" = "Nhận thông báo";
+"profile.faceID" = "Đăng nhập bằng FaceID";
+"profile.logout" = "Đăng xuất";
+"profile.open_app_setting_title" = "Cài đặt";
+"profile.open_app_setting_content" = "Mở cài đặt để nhận thông báo từ ứng dụng";
+"profile.password.notEmpty" = "Mật khẩu không được để trống";
+"profile.password.notRetype" = "Chưa nhập lại mật khẩu";
+"profile.password.notSame" = "Mật khẩu nhập lại không trùng với mật khẩu mới";
+"profile.password.changeSuccess" = "Đổi mật khẩu thành công";
+"ForgotPassword.userName_NotEmpty" = "Chưa nhập tên tài khoản";
+"ForgotPassword.email_NotEmpty" = "Chưa nhập email";
+"ForgotPassword.success" = "Reset mật khẩu thành công. Mật khẩu mới đã được gửi tới email của bạn";
+"ForgotPassword.failed" = "Không tìm thấy người dùng có username và email này";
+
+"optionselect.finish_select" = "ĐỒNG Ý";
+"optionselect.field_prefix" = "Lĩnh vực %@";
+"optionselect.search_placeholder" = "Tìm kiếm";
+"optionselect.search_placeholder_key" = "Nhập từ khoá";
+
+
+"silver_background" = "bg_home_menu";
+
+
+"synthesis_report.all_field" = "TẤT CẢ CÁC LĨNH VỰC";
+"synthesis_report.title" = "BÁO CÁO TỔNG HỢP %@";
+
+"synthesis_report.calendar_done_btn_title" = "TÌM KIẾM";
+
+
+"calendar.month_title" = "Tháng %@";
+"calendar_now_title" = "H.tại";
+
+
+"emergency.title" = "KHẨN CẤP";
+
+
+"MALE"="Nam";
+"FEMALE"="Nữ";
+"back"="Trở về";

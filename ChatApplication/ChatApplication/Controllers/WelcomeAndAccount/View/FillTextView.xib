@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FillTextView" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+            <connections>
+                <outlet property="imageLeft" destination="duN-iP-K4f" id="MSY-dq-LWq"/>
+                <outlet property="imageRight" destination="yEV-UC-QQ4" id="Tw8-ba-qC1"/>
+                <outlet property="textField" destination="F2r-co-urB" id="SCP-l7-nQn"/>
+                <outlet property="viewBoundButtonRight" destination="uJx-3i-DGu" id="7DO-ju-zsa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60w-Dh-hYu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginHidePass" translatesAutoresizingMaskIntoConstraints="NO" id="duN-iP-K4f">
+                            <rect key="frame" x="0.0" y="33" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="s9M-Gi-WRB"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập mật khẩu mới" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-co-urB" customClass="PasswordTextField" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+                            <rect key="frame" x="30" y="0.0" width="334" height="84"/>
+                            <color key="textColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="nCx-tI-oAm"/>
+                            </connections>
+                        </textField>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-3i-DGu">
+                            <rect key="frame" x="364" y="0.0" width="50" height="84"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_eye" translatesAutoresizingMaskIntoConstraints="NO" id="yEV-UC-QQ4">
+                                    <rect key="frame" x="22" y="33" width="18" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="yEV-UC-QQ4" secondAttribute="height" id="hvh-r6-hFM"/>
+                                        <constraint firstAttribute="width" constant="18" id="lI1-dZ-gRL"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1K-Ku-JyQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                                    <connections>
+                                        <action selector="buttonShowPassword:" destination="-1" eventType="touchUpInside" id="hnW-Vh-DPf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="yEV-UC-QQ4" secondAttribute="trailing" constant="10" id="7re-DR-ngs"/>
+                                <constraint firstAttribute="width" constant="50" id="TWJ-pi-UqZ"/>
+                                <constraint firstItem="W1K-Ku-JyQ" firstAttribute="top" secondItem="uJx-3i-DGu" secondAttribute="top" id="Zvc-BO-CFl"/>
+                                <constraint firstItem="yEV-UC-QQ4" firstAttribute="centerY" secondItem="uJx-3i-DGu" secondAttribute="centerY" id="gdi-hC-Uuk"/>
+                                <constraint firstAttribute="trailing" secondItem="W1K-Ku-JyQ" secondAttribute="trailing" constant="-10" id="n6e-as-16y"/>
+                                <constraint firstItem="W1K-Ku-JyQ" firstAttribute="leading" secondItem="uJx-3i-DGu" secondAttribute="leading" id="sZ4-hP-tB4"/>
+                                <constraint firstAttribute="bottom" secondItem="W1K-Ku-JyQ" secondAttribute="bottom" id="swr-zK-PBl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-Wi-CyU">
+                            <rect key="frame" x="0.0" y="78" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.63529411759999999" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Y7c-ey-eYt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ngU-Wi-CyU" secondAttribute="trailing" id="1hx-Ts-9Go"/>
+                        <constraint firstItem="duN-iP-K4f" firstAttribute="leading" secondItem="60w-Dh-hYu" secondAttribute="leading" id="63f-sK-EJM"/>
+                        <constraint firstItem="ngU-Wi-CyU" firstAttribute="leading" secondItem="60w-Dh-hYu" secondAttribute="leading" id="I6t-TX-agj"/>
+                        <constraint firstAttribute="bottom" secondItem="uJx-3i-DGu" secondAttribute="bottom" id="PUZ-CI-MTY"/>
+                        <constraint firstItem="F2r-co-urB" firstAttribute="top" secondItem="60w-Dh-hYu" secondAttribute="top" id="RfV-XD-2HQ"/>
+                        <constraint firstItem="uJx-3i-DGu" firstAttribute="leading" secondItem="F2r-co-urB" secondAttribute="trailing" id="aGl-0L-Ime"/>
+                        <constraint firstAttribute="bottom" secondItem="F2r-co-urB" secondAttribute="bottom" id="cAG-sK-lLt"/>
+                        <constraint firstAttribute="trailing" secondItem="uJx-3i-DGu" secondAttribute="trailing" id="diX-aa-WrR"/>
+                        <constraint firstItem="duN-iP-K4f" firstAttribute="width" secondItem="duN-iP-K4f" secondAttribute="height" id="k8z-Um-wNl"/>
+                        <constraint firstItem="duN-iP-K4f" firstAttribute="centerY" secondItem="60w-Dh-hYu" secondAttribute="centerY" id="lTN-h4-scu"/>
+                        <constraint firstItem="uJx-3i-DGu" firstAttribute="top" secondItem="60w-Dh-hYu" secondAttribute="top" id="rKt-dh-cCU"/>
+                        <constraint firstAttribute="bottom" secondItem="ngU-Wi-CyU" secondAttribute="bottom" constant="5" id="uX0-uM-MlJ"/>
+                        <constraint firstItem="F2r-co-urB" firstAttribute="leading" secondItem="duN-iP-K4f" secondAttribute="trailing" constant="12" id="zKT-L0-7cY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="60w-Dh-hYu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CU3-ua-XaQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="60w-Dh-hYu" secondAttribute="bottom" id="ZHX-5w-Uce"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="60w-Dh-hYu" secondAttribute="trailing" id="fbW-Lq-Eri"/>
+                <constraint firstItem="60w-Dh-hYu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uHg-O5-d53"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="37.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoginHidePass" width="128" height="128"/>
+        <image name="login_eye" width="32.5" height="22.5"/>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+/* 
+  Localizable.strings
+  CTT_BN
+
+  Created by VietHD-D3 on 4/22/19.
+  Copyright © 2019 VietHD-D3. All rights reserved.
+*/
+
+"keychain.user.user_name" = "ESUsername";
+"keychain.user.pass_word" = "ESUserPassword";
+"keychain.user.id" = "ESUserID";
+"keychain.user.name" = "ESUserName";
+
+"userdefault.is_enable_biometric" = "IsBiometricEnable";
+
+"login_screen.username_placeholder" = "User name";
+"login_screen.password_placeholder" = "Password";
+"login_screen.username_empty" = "Please type user name";
+"login_screen.password_empty" = "Please type password";
+
+"login_screen.finger_title_description" = "Unlock by fingerprint";
+"login_screen.finger_quest_content" = "Log in by fingerprint";
+"login_screen.finger_use_content" = "Use fingerprint for quick and convenient logging in";
+"login_screen.finger_content_error" = "Fingerprint is not correct";
+
+"login_screen.faceid_title_description" = "Unlock by Face ID";
+"login_screen.faceid_quest_content" = "Log in by Face ID";
+"login_screen.faceid_use_content" = "Use FaceID for quick and convenient logging in";
+"login_screen.faceid_content_error" = "FaceID is not correct";
+
+"login_screen.login_false" = "Log in failed, please check and try again";
+
+
+"home_menu.menu_item_travel" = "Tourist";
+"home_menu.menu_item_invest" = "Investor";
+"home_menu.menu_item_enterprise" = "Enterprise";
+"home_menu.menu_item_people" = "People";
+"home_menu.menu_item_weak_people" = "Weak People";
+"Home_SearchBar" = "Search everything...";
+"Home_language_name" = "EN";
+
+"tabbar.home_item" = "Home";
+"tabbar.account_item" = "Account";
+"tabbar.title_navi" = "Notification";
+"tabbar.ultilites" = "Ultilites";
+"findEvent" = "Search event";
+
+"loading.default_title" = "Loading";
+
+
+"alert.default_title" = "Notification";
+"alert.default_login_error" = "Login failed, please try again!";
+"alert.default_login" = "Please login to use";
+"alert.default_login_updateSuccess" = "Update successful";
+"alert.default_login_title" = "Login";
+"alert.default_login_close" = "Close";
+"alert.default_name_not_type" = "Please enter your full name!";
+"alert.default_birthday_not_type" = "Please enter the date of birth!";
+"alert.default_accept_title" = "OK";
+"alert.photo_permission_denied_title" = "Application has not allowed to access";
+"alert.photo_permission_denied_content" = "Go setting to allow appplication";
+"alert.edit_title" = "Edit";
+"alert.remove_title" = "Delete";
+"alert.cancel_title" = "Cancel";
+"alert_delete_are_you_sure" = "Are you sure to delete this vote?";
+"alert_delete_comment_are_you_sure" = "Are you sure to delete this comment?";
+"alert.open_setting" = "Setting";
+"alert.error_default" = "Somethings is wrong, please try again";
+"alert.error_wrong_date_format" = "Please type the date follow format: YYYY-MM-DD(ex: 2019-03-18)";
+"alert.email_invalid" = "Email is not valid";
+"alert_no_connection" = "Failed connection";
+"alert_no_connection_try" = "No internet connection, please try again.";
+"alert.text_search_limited" = "You have not allowed to type over %d characters";
+"alert.content_not_found" = "Sorry, this content does not exist";
+"alert.not_found" = "Sory, this content isn't available right now";
+"alert.image_wrong_format" = "Your image format is not valid.";
+"alert.error_invalid_token" = "Invalid token session. Please login again";
+"alert.force_update_button" = "Update";
+"alert.force_update_title" = "Application update";
+"alert.force_update_description" = "A new version of the application is available. Please update the application";
+"alert.request_timeout" = "Quá thời gian kết nối tới máy chủ, vui lòng thử lại";
+
+"profile.logout_title" = "Log out";
+"profile.logout_content" = "Are you sure you want to log out?";
+"profile.screen_ok" = "OK";
+"profile.change_password" = "Change password";
+"profile.notification" = "Get notification";
+"profile.faceID" = "Log in by FaceID";
+"profile.logout" = "Log out";
+"profile.open_app_setting_title" = "Setting";
+"profile.open_app_setting_content" = "Open setting to get App'notification";
+
+"profile.password.notEmpty" = "Please fill the password";
+"profile.password.notRetype" = "Please retype the password";
+"profile.password.notSame" = "New password is reduplicatived the old one";
+"profile.password.changeSuccess" = "Password is changed";
+"ForgotPassword.userName_NotEmpty" = "Please type user name";
+"ForgotPassword.email_NotEmpty" = "Please type email";
+"ForgotPassword.success" = "New password is sent to you, please check it!";
+"ForgotPassword.failed" = "User and email is not found";
+
+"optionselect.finish_select" = "AGREE";
+"optionselect.field_prefix" = "Field %@";
+"optionselect.search_placeholder" = "Search";
+"optionselect.search_placeholder_key" = "Type key";
+
+
+"silver_background" = "bg_home_menu";
+
+
+"synthesis_report.all_field" = "ALL FIELDS";
+"synthesis_report.title" = "SYNTHESIS REPORT %@";
+
+"synthesis_report.calendar_done_btn_title" = "SEARCH";
+
+
+"calendar.month_title" = "Month %@";
+"calendar_now_title" = "Now";
+
+
+"emergency.title" = "EMERGENCY";
+
+"MALE"="Nam";
+"FEMALE"="Nữ";
+"back"="Trở về";

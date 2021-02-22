@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  AIC Utilities People
+
+  Created by TrungHD-D1-M on 8/19/19.
+  Copyright © 2019 Rikkeisoft. All rights reserved.
+*/
+
+
+
+"NSPhotoLibraryAddUsageDescription" = "Allow this app access your library to pick photos to send feedback and post comments";
+"NSPhotoLibraryUsageDescription" = "Allow this app access your library to pick photos to send feedback and post comments";

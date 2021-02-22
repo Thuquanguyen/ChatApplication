@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchNavigationView" customModule="AIC_Utilities_People" customModuleProvider="target">
+            <connections>
+                <outlet property="imgLeft" destination="0DM-A1-Dbg" id="F0M-wW-VIW"/>
+                <outlet property="leftButtonView" destination="Cyj-4g-eFM" id="sdX-U9-Pqr"/>
+                <outlet property="searchBarView" destination="z3Q-WI-QmI" id="ERL-Wt-jk2"/>
+                <outlet property="separateView" destination="fkU-iB-Fpz" id="hXG-MU-F10"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-4g-eFM">
+                    <rect key="frame" x="0.0" y="12" width="70" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_Back" translatesAutoresizingMaskIntoConstraints="NO" id="0DM-A1-Dbg">
+                            <rect key="frame" x="24" y="24" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="Zgo-FZ-Cmz"/>
+                                <constraint firstAttribute="height" constant="22" id="o3e-el-i6Z"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Cyj-4g-eFM" secondAttribute="height" multiplier="1:1" id="6B2-Z0-kiH"/>
+                        <constraint firstItem="0DM-A1-Dbg" firstAttribute="leading" secondItem="Cyj-4g-eFM" secondAttribute="leading" constant="24" id="cvz-eS-YFH"/>
+                        <constraint firstItem="0DM-A1-Dbg" firstAttribute="centerX" secondItem="Cyj-4g-eFM" secondAttribute="centerX" id="fcz-2p-bdb"/>
+                        <constraint firstItem="0DM-A1-Dbg" firstAttribute="centerY" secondItem="Cyj-4g-eFM" secondAttribute="centerY" id="syT-zH-aRL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3Q-WI-QmI" customClass="SearchBarView" customModule="AIC_Utilities_People" customModuleProvider="target">
+                    <rect key="frame" x="70" y="27" width="353" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bZS-GG-hso"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkU-iB-Fpz">
+                    <rect key="frame" x="0.0" y="83" width="447" height="1"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Mrm-m3-ZeL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fkU-iB-Fpz" secondAttribute="trailing" id="38f-3g-tBe"/>
+                <constraint firstAttribute="bottom" secondItem="fkU-iB-Fpz" secondAttribute="bottom" id="8pg-s9-29z"/>
+                <constraint firstItem="z3Q-WI-QmI" firstAttribute="centerY" secondItem="0DM-A1-Dbg" secondAttribute="centerY" id="HDC-OC-VOz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z3Q-WI-QmI" secondAttribute="trailing" constant="24" id="LKT-DH-bdT"/>
+                <constraint firstItem="fkU-iB-Fpz" firstAttribute="top" secondItem="z3Q-WI-QmI" secondAttribute="bottom" constant="16" id="RcV-cb-iyp"/>
+                <constraint firstItem="Cyj-4g-eFM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ULY-dl-YXW"/>
+                <constraint firstItem="fkU-iB-Fpz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xfe-ze-Ia2"/>
+                <constraint firstItem="z3Q-WI-QmI" firstAttribute="leading" secondItem="Cyj-4g-eFM" secondAttribute="trailing" id="uFf-zW-bvz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="161.59420289855075" y="-116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image_Back" width="40" height="40"/>
+    </resources>
+</document>

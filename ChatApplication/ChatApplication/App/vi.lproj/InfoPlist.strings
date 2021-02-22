@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  AIC Utilities People
+
+  Created by TrungHD-D1-M on 8/19/19.
+  Copyright © 2019 Rikkeisoft. All rights reserved.
+*/
+
+
+"NSCameraUsageDescription" = "Ứng dụng truy cập camera để chụp ảnh gửi góp ý, đăng bài";
+"NSContactsUsageDescription" = "Ứng dụng truy cập danh bạ để trợ lý ảo hỗ trợ bạn tốt hơn.";
+"NSLocationWhenInUseUsageDescription" = "Ứng dụng truy cập vị trí để xác định những địa điểm và tiện ích xung quanh bạn.";
+"NSLocationAlwaysUsageDescription" = "Ứng dụng truy cập vị trí để xác định những địa điểm và tiện ích xung quanh bạn.";
+"NSMicrophoneUsageDescription" = "Ứng dụng truy cập micro để giúp bạn trò chuyện cùng trợ lý ảo.";
+"NSPhotoLibraryAddUsageDescription" = "Ứng dụng truy cập thư viện ảnh để chọn ảnh góp ý, đăng bài";
+"NSPhotoLibraryUsageDescription" = "Ứng dụng truy cập thư viện ảnh để chọn ảnh góp ý, đăng bài";
+"CFBundleShortVersionString" = "1";

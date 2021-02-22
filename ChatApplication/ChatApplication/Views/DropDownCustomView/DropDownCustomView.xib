@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropDownCustomView" customModule="AIC_Utilities_People" customModuleProvider="target">
+            <connections>
+                <outlet property="titleTextField" destination="Xz9-rO-2of" id="3uh-ou-JUj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xz9-rO-2of">
+                    <rect key="frame" x="0.0" y="0.0" width="447" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0nv-mY-4I0"/>
+                    </constraints>
+                    <color key="textColor" red="0.2274509804" green="0.27058823529999998" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_Dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="B7Q-5Q-lku">
+                    <rect key="frame" x="423" y="16" width="14" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="NQ5-s2-yxq"/>
+                        <constraint firstAttribute="height" constant="8" id="lAG-JS-bn2"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xz9-rO-2of" secondAttribute="bottom" id="E5n-Gk-a2b"/>
+                <constraint firstItem="B7Q-5Q-lku" firstAttribute="centerY" secondItem="Xz9-rO-2of" secondAttribute="centerY" id="Q7M-qT-1Sy"/>
+                <constraint firstItem="Xz9-rO-2of" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VD2-0D-kTo"/>
+                <constraint firstAttribute="trailing" secondItem="B7Q-5Q-lku" secondAttribute="trailing" constant="10" id="ZOx-pd-5Ep"/>
+                <constraint firstItem="Xz9-rO-2of" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="puK-Xn-ZYC"/>
+                <constraint firstAttribute="trailing" secondItem="Xz9-rO-2of" secondAttribute="trailing" id="xbd-FC-3YI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="155.79710144927537" y="-129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image_Dropdown" width="15" height="15"/>
+    </resources>
+</document>

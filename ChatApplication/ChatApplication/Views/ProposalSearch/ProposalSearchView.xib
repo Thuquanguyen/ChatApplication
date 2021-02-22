@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProposalSearchView" customModule="AIC_Utilities_People" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="4jF-YY-7KR" id="Oji-kR-EzK"/>
+                <outlet property="viewBoundSearch" destination="7wi-3w-hWg" id="nSL-NN-dX9"/>
+                <outlet property="viewFilter" destination="B2a-MQ-6eO" id="zev-TA-1kh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eev-96-b0G">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PF4-MY-deM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wi-3w-hWg">
+                            <rect key="frame" x="16" y="37" width="291" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-U5-KBq">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="gKA-hB-acS"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="buttonSearch:" destination="-1" eventType="touchUpInside" id="mPm-XD-YJo"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_proposal" translatesAutoresizingMaskIntoConstraints="NO" id="sFG-qM-Ot0">
+                                    <rect key="frame" x="12" y="10" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="E7L-Uk-z3A"/>
+                                        <constraint firstAttribute="width" secondItem="sFG-qM-Ot0" secondAttribute="height" id="Yqs-4r-ZyX"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-YY-7KR">
+                                    <rect key="frame" x="44" y="0.0" width="235" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                    <connections>
+                                        <action selector="textFieldBegin:" destination="-1" eventType="editingDidEnd" id="WFj-Nf-8gQ"/>
+                                        <action selector="textFieldDidChange:" destination="-1" eventType="editingDidEnd" id="0e7-cM-xj5"/>
+                                        <outlet property="delegate" destination="-1" id="jmR-zJ-Msc"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="4jF-YY-7KR" firstAttribute="centerY" secondItem="7wi-3w-hWg" secondAttribute="centerY" id="BEh-7I-Hc2"/>
+                                <constraint firstItem="sFG-qM-Ot0" firstAttribute="centerY" secondItem="7wi-3w-hWg" secondAttribute="centerY" id="FLr-FC-QvH"/>
+                                <constraint firstItem="iJy-U5-KBq" firstAttribute="top" secondItem="7wi-3w-hWg" secondAttribute="top" id="I0Y-sh-dcc"/>
+                                <constraint firstItem="4jF-YY-7KR" firstAttribute="leading" secondItem="sFG-qM-Ot0" secondAttribute="trailing" constant="12" id="K5Y-qp-8iH"/>
+                                <constraint firstAttribute="bottom" secondItem="iJy-U5-KBq" secondAttribute="bottom" id="OWz-d8-Ehp"/>
+                                <constraint firstAttribute="trailing" secondItem="4jF-YY-7KR" secondAttribute="trailing" constant="12" id="W9r-Na-87Z"/>
+                                <constraint firstItem="iJy-U5-KBq" firstAttribute="leading" secondItem="7wi-3w-hWg" secondAttribute="leading" id="c9m-VY-AmA"/>
+                                <constraint firstAttribute="height" constant="40" id="eGY-8p-hNf"/>
+                                <constraint firstItem="sFG-qM-Ot0" firstAttribute="leading" secondItem="7wi-3w-hWg" secondAttribute="leading" constant="12" id="hSr-sR-w0q"/>
+                                <constraint firstItem="4jF-YY-7KR" firstAttribute="top" secondItem="7wi-3w-hWg" secondAttribute="top" id="muG-Nv-ovY"/>
+                                <constraint firstAttribute="bottom" secondItem="4jF-YY-7KR" secondAttribute="bottom" id="sns-Sz-ZE2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2a-MQ-6eO" customClass="DefaultFilterEntryButtonView" customModule="AIC_Utilities_People" customModuleProvider="target">
+                            <rect key="frame" x="315" y="35" width="44" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="B2a-MQ-6eO" secondAttribute="height" id="cnr-Hc-heJ"/>
+                                <constraint firstAttribute="width" constant="44" id="d3O-F5-B9t"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7wi-3w-hWg" firstAttribute="centerY" secondItem="PF4-MY-deM" secondAttribute="centerY" id="36V-vp-xG0"/>
+                        <constraint firstItem="B2a-MQ-6eO" firstAttribute="leading" secondItem="7wi-3w-hWg" secondAttribute="trailing" constant="8" id="7RC-3p-RUn"/>
+                        <constraint firstItem="B2a-MQ-6eO" firstAttribute="centerY" secondItem="PF4-MY-deM" secondAttribute="centerY" id="INi-NG-54N"/>
+                        <constraint firstAttribute="trailing" secondItem="B2a-MQ-6eO" secondAttribute="trailing" constant="16" id="YJT-hh-5T2"/>
+                        <constraint firstItem="7wi-3w-hWg" firstAttribute="leading" secondItem="PF4-MY-deM" secondAttribute="leading" constant="16" id="dEn-XL-OGg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PF4-MY-deM" firstAttribute="top" secondItem="eev-96-b0G" secondAttribute="top" id="FSE-Zu-seN"/>
+                <constraint firstItem="PF4-MY-deM" firstAttribute="leading" secondItem="eev-96-b0G" secondAttribute="leading" id="MnW-BX-5TM"/>
+                <constraint firstAttribute="trailing" secondItem="PF4-MY-deM" secondAttribute="trailing" id="Stm-Gl-Ea3"/>
+                <constraint firstItem="PF4-MY-deM" firstAttribute="bottom" secondItem="eev-96-b0G" secondAttribute="bottom" id="jPS-GP-JtJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="k1g-Rj-0AZ"/>
+            <point key="canvasLocation" x="131.15942028985509" y="-95.089285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_proposal" width="16" height="16"/>
+    </resources>
+</document>

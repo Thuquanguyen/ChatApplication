@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Heavy.ttf">
+            <string>Lato-Heavy</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpinionView" customModule="AIC_Utilities_People" customModuleProvider="target">
+            <connections>
+                <outlet property="colorView" destination="KPT-ZH-3uZ" id="bzi-Pu-t79"/>
+                <outlet property="nameLabel" destination="OZs-Le-KRk" id="Ckh-Vd-8yc"/>
+                <outlet property="opinionValueLabel" destination="EKK-ZM-Xw2" id="Lvz-1c-LlR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zx9-KU-iaA">
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="39"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPT-ZH-3uZ">
+                            <rect key="frame" x="0.0" y="5" width="8" height="8"/>
+                            <color key="backgroundColor" red="0.27058823529999998" green="0.92941176469999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="KPT-ZH-3uZ" secondAttribute="height" multiplier="1:1" id="57a-gS-nlL"/>
+                                <constraint firstAttribute="width" constant="8" id="E3Z-qo-oLg"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã trả lời" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-Le-KRk">
+                            <rect key="frame" x="18" y="-0.5" width="57" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="0.2274509804" green="0.27058823529999998" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="240" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKK-ZM-Xw2">
+                            <rect key="frame" x="18" y="19.5" width="28" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="16"/>
+                            <color key="textColor" red="0.2274509804" green="0.27058823529999998" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OZs-Le-KRk" firstAttribute="leading" secondItem="KPT-ZH-3uZ" secondAttribute="trailing" constant="10" id="L5k-d5-gJO"/>
+                        <constraint firstItem="KPT-ZH-3uZ" firstAttribute="leading" secondItem="zx9-KU-iaA" secondAttribute="leading" id="PDo-aJ-Ss6"/>
+                        <constraint firstItem="OZs-Le-KRk" firstAttribute="centerY" secondItem="KPT-ZH-3uZ" secondAttribute="centerY" constant="-1" id="TFv-fV-4oS"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EKK-ZM-Xw2" secondAttribute="trailing" constant="3" id="Tsg-xg-yJ0"/>
+                        <constraint firstAttribute="bottom" secondItem="EKK-ZM-Xw2" secondAttribute="bottom" id="d2d-fV-YIs"/>
+                        <constraint firstItem="EKK-ZM-Xw2" firstAttribute="leading" secondItem="OZs-Le-KRk" secondAttribute="leading" id="kAS-H9-llw"/>
+                        <constraint firstItem="KPT-ZH-3uZ" firstAttribute="top" secondItem="zx9-KU-iaA" secondAttribute="top" constant="5" id="m0r-v2-zUo"/>
+                        <constraint firstItem="EKK-ZM-Xw2" firstAttribute="top" secondItem="OZs-Le-KRk" secondAttribute="bottom" constant="3" id="tq7-je-v6X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zx9-KU-iaA" secondAttribute="trailing" id="47M-0Y-auW"/>
+                <constraint firstItem="zx9-KU-iaA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dw7-KF-CuT"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zx9-KU-iaA" secondAttribute="bottom" id="SuG-p9-22z"/>
+                <constraint firstItem="zx9-KU-iaA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wVU-eT-sfI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="42.028985507246382" y="-126.89732142857142"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC" customModule="Ads_Manage" customModuleProvider="target">
+            <connections>
+                <outlet property="basePageView" destination="GhA-yG-VR7" id="u0x-wi-0f1"/>
+                <outlet property="buttonStart" destination="Ip2-FB-zvx" id="0hn-BJ-DsU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84g-9P-uoB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhA-yG-VR7">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-FB-zvx">
+                            <rect key="frame" x="92" y="821" width="230" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="Sxx-Q8-oQ8"/>
+                                <constraint firstAttribute="height" constant="45" id="as9-D0-DOR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="Start">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonContinue:" destination="-1" eventType="touchUpInside" id="Z1h-VJ-HaC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="GhA-yG-VR7" firstAttribute="top" secondItem="84g-9P-uoB" secondAttribute="top" id="0ie-6O-7yu"/>
+                        <constraint firstAttribute="trailing" secondItem="GhA-yG-VR7" secondAttribute="trailing" id="AG9-JV-796"/>
+                        <constraint firstAttribute="bottom" secondItem="GhA-yG-VR7" secondAttribute="bottom" id="H99-g2-87y"/>
+                        <constraint firstItem="Ip2-FB-zvx" firstAttribute="centerX" secondItem="84g-9P-uoB" secondAttribute="centerX" id="I85-QH-ryh"/>
+                        <constraint firstItem="GhA-yG-VR7" firstAttribute="leading" secondItem="84g-9P-uoB" secondAttribute="leading" id="OLS-H7-ty6"/>
+                        <constraint firstAttribute="bottom" secondItem="Ip2-FB-zvx" secondAttribute="bottom" constant="30" id="XvN-fh-Sf5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="84g-9P-uoB" secondAttribute="trailing" id="DQ9-xi-yvR"/>
+                <constraint firstAttribute="bottom" secondItem="84g-9P-uoB" secondAttribute="bottom" id="J0F-hZ-7ME"/>
+                <constraint firstItem="84g-9P-uoB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Syp-Bu-QFS"/>
+                <constraint firstItem="84g-9P-uoB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qWh-0F-lzV"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

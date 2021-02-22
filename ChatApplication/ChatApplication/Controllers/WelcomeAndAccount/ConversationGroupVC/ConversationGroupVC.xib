@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConversationGroupVC" customModule="Chat_Room" customModuleProvider="target">
+            <connections>
+                <outlet property="chatRoomsTable" destination="yol-zz-fHq" id="fTM-sb-GDU"/>
+                <outlet property="naviBar" destination="aiB-qJ-YHn" id="Jk7-Ur-n4q"/>
+                <outlet property="newRoomTextField" destination="FBa-CG-gxi" id="z3n-Ru-IuD"/>
+                <outlet property="stackCreateChat" destination="aQO-Cg-Kfi" id="LdN-ES-NDK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiB-qJ-YHn" customClass="CustomNaviBar" customModule="Chat_Room" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="kCt-Ul-TFa"/>
+                        <constraint firstAttribute="height" priority="750" constant="64" placeholder="YES" id="qVm-bt-DSc"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v2I-jF-cRG">
+                    <rect key="frame" x="0.0" y="64" width="414" height="832"/>
+                    <subviews>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="aQO-Cg-Kfi">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dn-TK-moh">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chat Room Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-CG-gxi">
+                                            <rect key="frame" x="20" y="0.0" width="274" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94521335660000005" green="0.94521335660000005" blue="0.94521335660000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="FBa-CG-gxi" firstAttribute="top" secondItem="1dn-TK-moh" secondAttribute="top" id="JTG-qz-gcf"/>
+                                        <constraint firstAttribute="trailing" secondItem="FBa-CG-gxi" secondAttribute="trailing" constant="20" id="Jzb-qW-djG"/>
+                                        <constraint firstAttribute="height" constant="40" id="L5r-9w-9MF"/>
+                                        <constraint firstItem="FBa-CG-gxi" firstAttribute="centerY" secondItem="1dn-TK-moh" secondAttribute="centerY" id="N8f-kZ-z5J"/>
+                                        <constraint firstItem="FBa-CG-gxi" firstAttribute="leading" secondItem="1dn-TK-moh" secondAttribute="leading" constant="20" id="iku-5Q-9ix"/>
+                                        <constraint firstAttribute="bottom" secondItem="FBa-CG-gxi" secondAttribute="bottom" id="ycV-2T-QTs"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUb-Ul-Jgp">
+                                    <rect key="frame" x="314" y="0.0" width="100" height="40"/>
+                                    <color key="backgroundColor" red="0.2015531361" green="0.46097248790000001" blue="0.48247820139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="WuO-M5-3iu"/>
+                                    </constraints>
+                                    <state key="normal" title="Create Room">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionCreateRoom:" destination="-1" eventType="touchUpInside" id="vkT-Cy-4sH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="VUb-Ul-Jgp" firstAttribute="leading" secondItem="1dn-TK-moh" secondAttribute="trailing" id="vsj-c0-tPY"/>
+                            </constraints>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yol-zz-fHq">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="LWN-ra-vBW"/>
+                                <outlet property="delegate" destination="-1" id="f58-PT-mn5"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aiB-qJ-YHn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="21d-tm-SSm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v2I-jF-cRG" secondAttribute="trailing" id="F1F-Rd-b3y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aiB-qJ-YHn" secondAttribute="trailing" id="hX8-nW-0lL"/>
+                <constraint firstItem="v2I-jF-cRG" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="hbf-yC-tld"/>
+                <constraint firstItem="v2I-jF-cRG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j5S-eF-dfx"/>
+                <constraint firstItem="v2I-jF-cRG" firstAttribute="top" secondItem="aiB-qJ-YHn" secondAttribute="bottom" id="od9-K6-9iD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="aiB-qJ-YHn" secondAttribute="leading" id="tJc-JK-cnS"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
